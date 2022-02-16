@@ -18091,7 +18091,9 @@ definitions:
         example: 1
         description: 'Order in which the option is displayed on the storefront. '
       option_values:
-        $ref: '#/definitions/productOptionOptionValue_Full'
+        type: array
+        items: 
+          $ref: '#/definitions/productOptionOptionValue_Full'
   productOption_Full:
     allOf:
       - $ref: '#/definitions/productOption_Base'
